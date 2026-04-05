@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './CharacterProfile.css';
 
-const CharacterProfile = ({ characters, votedCharacterTag, hasVotedToday, onUpvote }) => {
+const CharacterProfile = ({ characters, votedCharacterTag, hasVotedToday, onUpvote, rankingsPath = '/' }) => {
   const { id } = useParams();
   const character = characters.find(c => c.id === parseInt(id));
 
@@ -14,7 +14,7 @@ const CharacterProfile = ({ characters, votedCharacterTag, hasVotedToday, onUpvo
     return (
       <div className="profile-container profile-not-found">
         <h2>Character Not Found</h2>
-        <Link to="/" className="back-link">Return to Ranks</Link>
+        <Link to={rankingsPath} className="back-link">Return to Ranks</Link>
       </div>
     );
   }
@@ -28,7 +28,7 @@ const CharacterProfile = ({ characters, votedCharacterTag, hasVotedToday, onUpvo
   return (
     <div className="profile-container">
       <nav className="profile-nav">
-        <Link to="/" className="back-link">
+        <Link to={rankingsPath} className="back-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>

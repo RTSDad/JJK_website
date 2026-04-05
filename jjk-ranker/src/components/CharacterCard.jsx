@@ -2,12 +2,13 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CharacterCard.css';
 
-const CharacterCard = ({ character, onUpvote, isActiveVote, hasVotedToday }) => {
+const defaultCharacterPath = (c) => `/character/${c.id}`;
+
+const CharacterCard = ({ character, onUpvote, isActiveVote, hasVotedToday, getCharacterPath = defaultCharacterPath }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    // Navigate to character specific detail page
-    navigate(`/character/${character.id}`);
+    navigate(getCharacterPath(character));
   };
 
   return (
