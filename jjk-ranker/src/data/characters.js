@@ -5,14 +5,11 @@ export const characters = [
     "tag": "itadori_yuuji",
     "description": "A kind-hearted teenager who became the vessel for Ryomen Sukuna.",
     "narrative": "Yuji Itadori is the main protagonist of the Jujutsu Kaisen series. He was an ordinary student living in Sendai until he crossed paths with Megumi Fushiguro and consumed one of Sukuna's fingers to save his friends. By doing so, he became the vessel of the King of Curses.\n\nYuji possesses superhuman physical prowess and is an absolute prodigy in hand-to-hand combat. Under Gojo's mentorship, he learns to channel cursed energy, mastering the devastating 'Divergent Fist' and 'Black Flash'. His driving force is his grandfather's dying wish: to save people so that when he dies, he will be surrounded by loved ones.",
-    "image": "/images/yuji_itadori_0.jpeg",
+    "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/11/Jujutsu-Kaisen-Itadori.jpg",
     "gallery": [
-      "/images/yuji_itadori_0.jpeg",
-      "/images/yuji_itadori_1.jpg",
-      "/images/yuji_itadori_2.jpg",
-      "/images/yuji_itadori_3.jpg",
-      "/images/yuji_itadori_4.jpg",
-      "/images/yuji_itadori_5.jpg"
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/11/Jujutsu-Kaisen-Itadori.jpg",
+      "https://fugitives.com/wp-content/uploads/2023/11/Jujutsu-Kaisen-Itadori-Yuji.jpg",
+      "https://cdn.discordapp.com/attachments/1027693824417476749/1490346604983750736/jujutsu-kaisen-jin-itadori-family-tree.png?ex=69d3b8ef&is=69d2676f&hm=525f4703710087d9a1b15029d0a110d8300e0dd812d37108659ec49ae12ab4ce&"
     ],
     "votes": 2007
   },
@@ -22,14 +19,11 @@ export const characters = [
     "tag": "gojou_satoru",
     "description": "The strongest jujutsu sorcerer in the world, renowned for his Limitless and Six Eyes.",
     "narrative": "Satoru Gojo is the pride of the Gojo Family, the first person to inherit both the Limitless and the Six Eyes in four hundred years. He works as a teacher at Tokyo Jujutsu High, using his influence to protect his students and mold a new generation of sorcerers who can stand beside him.\n\nHis Limitless technique grants him absolute control over space, allowing him to converge or diverge infinites at will. His Domain Expansion, \"Unlimited Void,\" forces the target to perceive infinite information, leaving them completely paralyzed and catatonic.",
-    "image": "/images/satoru_gojo_0.jpeg",
+    "image": "https://butwhytho.net/wp-content/uploads/2023/09/Gojo-Jujutsu-Kaisen-But-Why-Tho-2.jpg",
     "gallery": [
-      "/images/satoru_gojo_0.jpeg",
-      "/images/satoru_gojo_1.jpg",
-      "/images/satoru_gojo_2.png",
-      "/images/satoru_gojo_3.jpg",
-      "/images/satoru_gojo_4.jpg",
-      "/images/satoru_gojo_5.jpg"
+      "https://butwhytho.net/wp-content/uploads/2023/09/Gojo-Jujutsu-Kaisen-But-Why-Tho-2.jpg",
+      "https://static.wikia.nocookie.net/deathbattle/images/1/10/Portrait.satorugojo.png/revision/latest/thumbnail/width/360/height/450?cb=20251223054115",
+      "https://static.wikia.nocookie.net/jujutsu-kaisen/images/5/5a/Satoru_Gojo_arrives_on_the_battlefield_%28Anime%29.png/revision/latest?cb=20210226205256"
     ],
     "votes": 3103
   },
@@ -39,11 +33,11 @@ export const characters = [
     "tag": "ryoumen_sukuna",
     "description": "The undisputed King of Curses. An incredibly powerful and malevolent spirit residing in Yuji.",
     "narrative": "Ryomen Sukuna is a mighty cursed spirit known as the indisputable King of Curses. He serves as one of the primary antagonists of the Jujutsu Kaisen series. According to a legend, Sukuna was a human sorcerer over a thousand years ago. In the Golden Age of Jujutsu, sorcerers gave their all to defeat him but failed. After his death, his corpse couldn't be fully destroyed, leaving behind twenty indestructible fingers.\n\nSukuna possesses a terrifying amount of cursed energy and possesses immense raw strength and speed. His techniques revolve around slashing via 'Dismantle' and 'Cleave', and his devastating Domain Expansion is 'Malevolent Shrine', a divine domain that can slaughter everything in a 200 meter radius.",
-    "image": "/images/ryomen_sukuna_0.png",
+    "image": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/3/36/Sukuna_demands_Jogo%2C_Mimiko%2C_and_Nanako_bow_to_him_%28Anime%29.png/revision/latest?cb=20231102222312",
     "gallery": [
-      "/images/ryomen_sukuna_0.png",
-      "/images/ryomen_sukuna_1.jpg",
-      "/images/ryomen_sukuna_0.png"
+      "https://static.wikia.nocookie.net/jujutsu-kaisen/images/3/36/Sukuna_demands_Jogo%2C_Mimiko%2C_and_Nanako_bow_to_him_%28Anime%29.png/revision/latest?cb=20231102222312",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/ryomen-sukuna.jpg?w=1600&h=900&fit=crop",
+      "https://4kwallpapers.com/images/wallpapers/sukuna-jujutsu-2048x2048-13852.png"
     ],
     "votes": 1123
   },
@@ -53,14 +47,11 @@ export const characters = [
     "tag": "fushiguro_megumi",
     "description": "A first-year student at Jujutsu High, known for his Ten Shadows Technique.",
     "narrative": "Megumi Fushiguro is a grade 2 jujutsu sorcerer and a first-year student at Tokyo Jujutsu High. He was scouted by Satoru Gojo as a youth, protecting him from being sold to the Zenin Clan. Megumi uses the Ten Shadows Technique, a highly respected hereditary technique that uses shadows to summon ten powerful shikigami.\n\nDespite his stoic demeanor, Megumi strongly believes that jujutsu sorcerers are tools meant to afford kind people the chance to live. He possesses enormous latent potential that even Sukuna has taken a great interest in.",
-    "image": "/images/megumi_fushiguro_0.jpg",
+    "image": "https://nxsnjqfqtwiaoedulnpr.supabase.co/storage/v1/object/public/image/articles/30-2_1331d799-1294-45d5-8f97-271190161e3f_653d557a57a7.jpg",
     "gallery": [
-      "/images/megumi_fushiguro_0.jpg",
-      "/images/megumi_fushiguro_1.jpg",
-      "/images/megumi_fushiguro_2.jpg",
-      "/images/megumi_fushiguro_3.jpg",
-      "/images/megumi_fushiguro_4.jpg",
-      "/images/megumi_fushiguro_5.jpg"
+      "https://nxsnjqfqtwiaoedulnpr.supabase.co/storage/v1/object/public/image/articles/30-2_1331d799-1294-45d5-8f97-271190161e3f_653d557a57a7.jpg",
+      "https://cdn.discordapp.com/attachments/1027693824417476749/1490347411422445780/ugc_2024977169947036285_1D9084168F0D78E551D123852BF9E2A8FB7F04A8_.png?ex=69d3b9b0&is=69d26830&hm=c8595330e3815ae057e519394a4ee6be0efc4771b5ba0ebd3b77488bed0b20ca&",
+      "https://upload.wikimedia.org/wikipedia/it/a/ac/Megumi_Fushiguro.jpg"
     ],
     "votes": 2172
   },
@@ -70,14 +61,11 @@ export const characters = [
     "tag": "kugisaki_nobara",
     "description": "A confident and tough first-year student who wields the Straw Doll Technique.",
     "narrative": "Nobara Kugisaki is a first-year student at Tokyo Jujutsu High who moved to Tokyo from the countryside seeking a better life. Bold, brash, and unshakably confident, Nobara takes deep pride in both her strength as a sorcerer and her femininity.\n\nShe fights using the Straw Doll Technique, utilizing a hammer, nails, and a straw doll. Her signature move, 'Resonance', allows her to strike an opponent's severed body part or energy to inflict massive damage directly to their core, making her exceptionally dangerous against curses.",
-    "image": "/images/nobara_kugisaki_0.png",
+    "image": "https://practicaltyping.com/wp-content/uploads/2023/12/kugisaki.jpg",
     "gallery": [
-      "/images/nobara_kugisaki_0.png",
-      "/images/nobara_kugisaki_1.png",
-      "/images/nobara_kugisaki_2.jpg",
-      "/images/nobara_kugisaki_3.png",
-      "/images/nobara_kugisaki_4.jpg",
-      "/images/nobara_kugisaki_5.jpg"
+      "https://practicaltyping.com/wp-content/uploads/2023/12/kugisaki.jpg",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/09/Nobara-Jujutsu-Kaisen-Nail.jpg?w=1600&h=900&fit=crop",
+      "https://sv.risuai.xyz/resource/42ff216154963b64d22377c65932edcbd2c30bcd8647283e252eb1895e45f6fe"
     ],
     "votes": 1980
   },
@@ -87,14 +75,11 @@ export const characters = [
     "tag": "nanami_kento",
     "description": "A pragmatic former salaryman turned Grade 1 jujutsu sorcerer.",
     "narrative": "Kento Nanami is a Grade 1 jujutsu sorcerer and an underclassman to Satoru Gojo. He initially left the jujutsu world to work as a salaryman, disgusted by the sheer amount of death in the profession. However, he returned after realizing that normal corporate work was equally soul-crushing, deciding that being a sorcerer was 'slightly less idiotic.'\n\nHe uses the Ratio Technique, which divides his target into ten parts and creates a weak spot at the ratio of 7 to 3. This allows him to inflict devastating critical hits regardless of the opponent's durability.",
-    "image": "/images/kento_nanami_0.jpg",
+    "image": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/96/Kento_Nanami_%28Volume_11%29.png/revision/latest?cb=20250726004550",
     "gallery": [
-      "/images/kento_nanami_0.jpg",
-      "/images/kento_nanami_1.jpg",
-      "/images/kento_nanami_2.jpg",
-      "/images/kento_nanami_3.jpg",
-      "/images/kento_nanami_4.jpg",
-      "/images/kento_nanami_5.jpg"
+      "https://static.wikia.nocookie.net/jujutsu-kaisen/images/9/96/Kento_Nanami_%28Volume_11%29.png/revision/latest?cb=20250726004550",
+      "https://i.redd.it/nanami-would-fit-perfectly-in-the-world-of-hunter-x-hunter-v0-dp55wp7oqtvc1.jpg?width=500&format=pjpg&auto=webp&s=e47b2f0bde9e5230cecd6f5a19784a1a123c994e",
+      "https://us.oricon-group.com/upimg/detail/2000/2922/img660/kento-nanami-jjk-EP36%20(1).jpg"
     ],
     "votes": 1874
   },
@@ -138,14 +123,11 @@ export const characters = [
     "tag": "getou_suguru",
     "description": "A special grade curse user and former classmate of Satoru Gojo.",
     "narrative": "Suguru Geto was formerly a classmate and the best friend of Satoru Gojo during their time at Tokyo Jujutsu High. He originally believed that jujutsu sorcerers existed to protect non-sorcerers. However, after witnessing the cruelty of non-sorcerers and the tragedy of his comrades, his ideology twisted into a belief that non-sorcerers must be eradicated to stop the creation of curses.\n\nHis signature technique, Cursed Spirit Manipulation, allows him to subjugate and control thousands of cursed spirits, summoning vast swarms or powerful special grades at will.",
-    "image": "/images/suguru_geto_0.jpg",
+    "image": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2023/02/jujutsu-kaisen-suguru-geto.jpg?w=1200&h=900&fit=crop",
     "gallery": [
-      "/images/suguru_geto_0.jpg",
-      "/images/suguru_geto_1.jpg",
-      "/images/suguru_geto_2.jpg",
-      "/images/suguru_geto_3.jpg",
-      "/images/suguru_geto_4.jpg",
-      "/images/suguru_geto_5.jpg"
+      "https://static0.cbrimages.com/wordpress/wp-content/uploads/2023/02/jujutsu-kaisen-suguru-geto.jpg?w=1200&h=900&fit=crop",
+      "https://preview.redd.it/how-strong-couldve-geto-been-at-his-full-potential-v0-q761rnitaltc1.jpeg?auto=webp&s=531fcefb89a2a606b175b0196832b672b62ca568",
+      "https://preview.redd.it/hot-take-suguru-geto-is-the-best-written-and-better-villain-v0-4b0u0xdultjf1.jpeg?auto=webp&s=6a0c38136590d067bbcadeff342646e1a80375fa"
     ],
     "votes": 4879
   },
@@ -155,14 +137,11 @@ export const characters = [
     "tag": "fushiguro_touji",
     "description": "The father of Megumi Fushiguro, known as the 'Sorcerer Killer'.",
     "narrative": "Toji Fushiguro, born Toji Zenin, is an infamous assassin known as the 'Sorcerer Killer'. Like Maki, he was born entirely without cursed energy. His Heavenly Restriction pushed his physical capabilities to godly extremes, sharpening all his five senses and making him an invisible, unmatched phantom in combat.\n\nHe uses a specialized cursed spirit wrapped around his torso to store an arsenal of legendary cursed tools, heavily exploiting his invisibility to systematically take down the strongest sorcerers on earth.",
-    "image": "/images/toji_fushiguro_0.jpg",
+    "image": "https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/de/Toji_ready_for_round_two_%28Anime%29.png/revision/latest?cb=20230728193332",
     "gallery": [
-      "/images/toji_fushiguro_0.jpg",
-      "/images/toji_fushiguro_1.jpg",
-      "/images/toji_fushiguro_2.jpg",
-      "/images/toji_fushiguro_3.jpg",
-      "/images/toji_fushiguro_4.jpg",
-      "/images/toji_fushiguro_5.jpg"
+      "https://static.wikia.nocookie.net/jujutsu-kaisen/images/d/de/Toji_ready_for_round_two_%28Anime%29.png/revision/latest?cb=20230728193332",
+      "https://www.superherotoystore.com/cdn/shop/articles/Toji_1200x.webp?v=1712589718",
+      "https://swordslice.com/cdn/shop/articles/Tojigoodphptp_b3ef3ce7-da03-4b15-9cb2-16e1dccab49d.png?v=1774278243"
     ],
     "votes": 4237
   },
@@ -237,11 +216,11 @@ export const characters = [
     "tag": "jougo_(jujutsu_kaisen)",
     "description": "A fiercely proud special-grade cursed spirit with extremely explosive fire abilities.",
     "narrative": "Jogo is an incredibly powerful unregistered special grade cursed spirit, born from the fear and negative emotions directed toward volcanoes and earth. He is extremely proud and believes that curses are the true, pure humans.\n\nDonning a distinct volcano-shaped head, Jogo possesses overwhelming speed and cursed energy. He can conjure extreme heat, volcanic eruptions, and disaster flames instantly. Despite frequently confronting the most powerful sorcerers in history like Gojo and Sukuna, Jogo's destructive capabilities easily dwarf those of a normal special grade curse.",
-    "image": "/images/jogo_jikan_0.jpg",
+    "image": "https://i.ytimg.com/vi/el4SxaKcWDs/maxresdefault.jpg",
     "gallery": [
-      "/images/jogo_jikan_0.jpg",
-      "/images/jogo_jikan_0.jpg",
-      "/images/jogo_jikan_0.jpg"
+      "https://i.ytimg.com/vi/el4SxaKcWDs/maxresdefault.jpg",
+      "https://static.wikia.nocookie.net/vsbattles/images/2/29/Jogo_%28Anime%29.png/",
+      "https://i.ytimg.com/vi/NHjS-jnfa7s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA5W_gdj0VzgVMAH7PFpWRVpKDHXQ"
     ],
     "votes": 1324
   },
