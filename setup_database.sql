@@ -30,4 +30,4 @@ BEGIN
     INSERT INTO character_votes (tag, votes) VALUES (character_tag_val, 1);
   END IF;
 END;
-$$ LANGUAGE plpgsql;
+$$ LANGUAGE plpgsql SECURITY DEFINER SET search_path = public;
