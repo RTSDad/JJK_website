@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import CharacterCard from './components/CharacterCard';
 import CharacterProfile from './pages/CharacterProfile';
+import Playground from './pages/Playground';
 import { characters as initialCharacters } from './data/characters';
 import { supabase } from './supabaseClient';
 
@@ -88,11 +89,18 @@ function App() {
         <Route path="/" element={
            <>
               <header className="app-header">
-                <h1 className="app-title">Jujutsu Kaisen</h1>
-                <p className="app-subtitle">
-                  Rank the strongest sorcerers and curses. You receive exactly <strong>1 Level Up Vote per day</strong>. 
-                  {hasVotedToday ? " You have locked in your vote today." : " Choose wisely to impact the global standings."}
-                </p>
+                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                  <div>
+                    <h1 className="app-title">Jujutsu Kaisen</h1>
+                    <p className="app-subtitle">
+                      Rank the strongest sorcerers and curses. You receive exactly <strong>1 Level Up Vote per day</strong>. 
+                      {hasVotedToday ? " You have locked in your vote today." : " Choose wisely to impact the global standings."}
+                    </p>
+                  </div>
+                  <Link to="/playground" style={{padding: '10px 20px', backgroundColor: '#e50914', color: 'white', textDecoration: 'none', borderRadius: '4px', fontWeight: 'bold', whiteSpace: 'nowrap', marginLeft: '20px'}}>
+                    🎮 Realtime Playground
+                  </Link>
+                </div>
               </header>
 
               <main className="characters-grid">
@@ -109,6 +117,7 @@ function App() {
            </>
         } />
         <Route path="/character/:id" element={<CharacterProfile characters={characters} votedCharacterTag={votedCharacterTag} hasVotedToday={hasVotedToday} onUpvote={handleUpvote} />} />
+        <Route path="/playground" element={<Playground />} />
       </Routes>
     </div>
   );
