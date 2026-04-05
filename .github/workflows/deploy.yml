@@ -1,35 +1,44 @@
-name: Deploy React/Vite site to GitHub Pages
+name: Build and Deploy React/Vite Site to GitHub Pages
 
+# Run this workflow on every push to main
 on:
   push:
     branches:
-      - main  # triggers on pushes to main
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment: github-pages
 
     steps:
+      # Step 1: Check out the repository
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      # Step 2: Set up Node.js 24 (future-proof)
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '24'
 
+      # Step 3: Install dependencies inside jjk-ranker
       - name: Install dependencies
         run: |
           cd jjk-ranker
           npm install
 
+      # Step 4: Build the React/Vite app
       - name: Build site
         run: |
           cd jjk-ranker
           npm run build
 
+      # Step 5: Deploy the built files to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./jjk-ranker/dist
+          # Ensures your CNAME file is used for the custom domain
+          cname: anime.frostshockstudios.com
