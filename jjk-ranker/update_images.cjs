@@ -13,7 +13,7 @@ for (let i = 1; i < lines.length; i++) {
   
   if (!namePart) continue;
   
-  // Extract all URLs from the line
+  // Extract all URLs from the line (splitting by commas doesn't matter if we just match http)
   const urls = rawLine.split(',').map(p => p.trim()).filter(p => p.startsWith('http'));
 
   let matchName = '';
@@ -26,11 +26,30 @@ for (let i = 1; i < lines.length; i++) {
   else if (namePart === 'nanami') matchName = 'Kento Nanami';
   else if (namePart === 'toji') matchName = 'Toji Fushiguro';
   else if (namePart === 'geto') matchName = 'Suguru Geto';
+  else if (namePart === 'inumaki') matchName = 'Toge Inumaki';
+  else if (namePart === 'todo') matchName = 'Aoi Todo';
+  else if (namePart === 'kechizu') matchName = 'Kechizu';
+  else if (namePart === 'choso') matchName = 'Choso';
+  else if (namePart === 'yuta') matchName = 'Yuta Okkotsu';
+  else if (namePart === 'eso') matchName = 'Eso';
+  else if (namePart === 'rika') matchName = 'Rika Orimoto';
+  else if (namePart === 'hanami') matchName = 'Hanami';
+  else if (namePart === 'dagon') matchName = 'Dagon';
+  else if (namePart === 'panda') matchName = 'Panda';
+  else if (namePart === 'mahito') matchName = 'Mahito';
+  else if (namePart === 'maki') matchName = 'Maki Zenin';
+  else if (namePart === 'hakari') matchName = 'Kinji Hakari';
+  else if (namePart === 'kashimo') matchName = 'Hajime Kashimo';
+  else if (namePart === 'mechamaru') matchName = 'Ultimate Mechamaru';
+  else if (namePart === 'huguruma') matchName = 'Hiromi Higuruma';
+  else if (namePart === 'kamo') matchName = 'Noritoshi Kamo';
+  else if (namePart === 'momo') matchName = 'Momo Nishimiya';
+  else if (namePart === 'miwa') matchName = 'Kasumi Miwa';
 
   if (matchName && urls.length > 0) {
     updates[matchName] = {
-      image: urls[0],   // First URL as the primary image
-      gallery: urls     // All URLs as the gallery
+      image: urls[0],
+      gallery: urls
     };
   }
 }
@@ -43,13 +62,29 @@ if (jsonStr.endsWith(';')) {
 
 const characters = JSON.parse(jsonStr);
 
-characters.forEach(char => {
-  if (updates[char.name]) {
-    char.image = updates[char.name].image;
-    char.gallery = updates[char.name].gallery;
+// Find max ID so we don't duplicate when appending
+let nextId = Math.max(...characters.map(c => c.id)) + 1;
+
+Object.keys(updates).forEach(name => {
+  const existing = characters.find(c => c.name === name);
+  if (existing) {
+    existing.image = updates[name].image;
+    existing.gallery = updates[name].gallery;
+  } else {
+    // Append completely new characters!
+    characters.push({
+      id: nextId++,
+      name: name,
+      tag: name.toLowerCase().replace(/ /g, '_'),
+      description: `A powerful combatant in the Jujutsu Kaisen universe.`,
+      narrative: `More information about ${name} will be added soon.`,
+      image: updates[name].image,
+      gallery: updates[name].gallery,
+      votes: 0
+    });
   }
 });
 
 const newContent = 'export const characters = ' + JSON.stringify(characters, null, 2) + ';\n';
 fs.writeFileSync(charPath, newContent, 'utf8');
-console.log("Updated images successfully!");
+console.log("Updated images and added completely new characters successfully!");
