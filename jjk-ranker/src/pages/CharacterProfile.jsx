@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './CharacterProfile.css';
 
-const CharacterProfile = ({ characters, votedCharacterId, onUpvote }) => {
+const CharacterProfile = ({ characters, votedCharacterTag, hasVotedToday, onUpvote }) => {
   const { id } = useParams();
   const character = characters.find(c => c.id === parseInt(id));
 
@@ -19,8 +19,8 @@ const CharacterProfile = ({ characters, votedCharacterId, onUpvote }) => {
     );
   }
 
-  const isActiveVote = votedCharacterId === character.id;
-  const currentVotes = isActiveVote ? character.votes + 1 : character.votes;
+  const isActiveVote = votedCharacterTag === character.tag;
+  const currentVotes = character.votes;
 
   // Split narrative into paragraphs
   const paragraphs = character.narrative.split('\n\n');
@@ -48,10 +48,11 @@ const CharacterProfile = ({ characters, votedCharacterId, onUpvote }) => {
               <span className="stat-label">Power Level</span>
             </div>
             <button 
-              className={`profile-upvote-button ${isActiveVote ? 'voted' : ''}`}
-              onClick={(e) => onUpvote(character.id, e)}
+              className={`profile-upvote-button ${isActiveVote ? 'voted' : ''} ${hasVotedToday && !isActiveVote ? 'disabled' : ''}`}
+              onClick={(e) => onUpvote(character.tag, e)}
+              disabled={hasVotedToday}
             >
-              {isActiveVote ? 'Power Assigned' : 'Transfer Power Vote'}
+              {isActiveVote ? 'Power Assigned' : hasVotedToday ? 'Vote Locked (Tomorrow)' : 'Assign Power Vote'}
             </button>
           </div>
         </div>

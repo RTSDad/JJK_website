@@ -11,7 +11,7 @@ export const characters = [
       "https://fugitives.com/wp-content/uploads/2023/11/Jujutsu-Kaisen-Itadori-Yuji.jpg",
       "https://cdn.discordapp.com/attachments/1027693824417476749/1490346604983750736/jujutsu-kaisen-jin-itadori-family-tree.png?ex=69d3b8ef&is=69d2676f&hm=525f4703710087d9a1b15029d0a110d8300e0dd812d37108659ec49ae12ab4ce&"
     ],
-    "votes": 2007
+    "votes": 0
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@ export const characters = [
       "https://static.wikia.nocookie.net/deathbattle/images/1/10/Portrait.satorugojo.png",
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/5/5a/Satoru_Gojo_arrives_on_the_battlefield_%28Anime%29.png"
     ],
-    "votes": 3103
+    "votes": 0
   },
   {
     "id": 3,
@@ -39,7 +39,7 @@ export const characters = [
       "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/06/ryomen-sukuna.jpg?w=1600&h=900&fit=crop",
       "https://4kwallpapers.com/images/wallpapers/sukuna-jujutsu-2048x2048-13852.png"
     ],
-    "votes": 1123
+    "votes": 0
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@ export const characters = [
       "https://cdn.discordapp.com/attachments/1027693824417476749/1490347411422445780/ugc_2024977169947036285_1D9084168F0D78E551D123852BF9E2A8FB7F04A8_.png?ex=69d3b9b0&is=69d26830&hm=c8595330e3815ae057e519394a4ee6be0efc4771b5ba0ebd3b77488bed0b20ca&",
       "https://upload.wikimedia.org/wikipedia/it/a/ac/Megumi_Fushiguro.jpg"
     ],
-    "votes": 2172
+    "votes": 0
   },
   {
     "id": 5,
@@ -67,7 +67,7 @@ export const characters = [
       "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/09/Nobara-Jujutsu-Kaisen-Nail.jpg?w=1600&h=900&fit=crop",
       "https://sv.risuai.xyz/resource/42ff216154963b64d22377c65932edcbd2c30bcd8647283e252eb1895e45f6fe"
     ],
-    "votes": 1980
+    "votes": 0
   },
   {
     "id": 6,
@@ -81,7 +81,7 @@ export const characters = [
       "https://i.redd.it/nanami-would-fit-perfectly-in-the-world-of-hunter-x-hunter-v0-dp55wp7oqtvc1.jpg?width=500&format=pjpg&auto=webp&s=e47b2f0bde9e5230cecd6f5a19784a1a123c994e",
       "https://us.oricon-group.com/upimg/detail/2000/2922/img660/kento-nanami-jjk-EP36%20(1).jpg"
     ],
-    "votes": 1874
+    "votes": 0
   },
   {
     "id": 7,
@@ -95,7 +95,7 @@ export const characters = [
       "https://i.ytimg.com/vi/YXIwsUzsWzU/maxresdefault.jpg",
       "https://s.yimg.com/ny/api/res/1.2/PR8nrf5uh.1j6geftcQDFg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTIwNDg7aD0xMTUyO2NmPXdlYnA-/https://media.zenfs.com/en/comingsoon_net_477/893ba892e664fd31f3e0f6da77145c4d"
     ],
-    "votes": 2356
+    "votes": 0
   },
   {
     "id": 8,
@@ -109,7 +109,7 @@ export const characters = [
       "https://preview.redd.it/jjk0-maki-and-jjk-maki-feel-like-two-entirely-different-v0-0j836ua1s66d1.jpeg?width=640&crop=smart&auto=webp&s=1bbd7fe02144b172baf51ec9a70acd76fcf20607",
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/2c/Maki_Zen%27in_%28Anime_4%29.png"
     ],
-    "votes": 956
+    "votes": 0
   },
   {
     "id": 9,
@@ -123,7 +123,7 @@ export const characters = [
       "https://preview.redd.it/how-strong-couldve-geto-been-at-his-full-potential-v0-q761rnitaltc1.jpeg?auto=webp&s=531fcefb89a2a606b175b0196832b672b62ca568",
       "https://preview.redd.it/hot-take-suguru-geto-is-the-best-written-and-better-villain-v0-4b0u0xdultjf1.jpeg?auto=webp&s=6a0c38136590d067bbcadeff342646e1a80375fa"
     ],
-    "votes": 4879
+    "votes": 0
   },
   {
     "id": 10,
@@ -137,7 +137,7 @@ export const characters = [
       "https://www.superherotoystore.com/cdn/shop/articles/Toji_1200x.webp?v=1712589718",
       "https://swordslice.com/cdn/shop/articles/Tojigoodphptp_b3ef3ce7-da03-4b15-9cb2-16e1dccab49d.png?v=1774278243"
     ],
-    "votes": 4237
+    "votes": 0
   },
   {
     "id": 11,
@@ -151,7 +151,7 @@ export const characters = [
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c3/Aoi_Todo_arrives_to_rescue_Yuji_%28Anime%29.png",
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/79/Aoi_Todo_%28Anime%29.png"
     ],
-    "votes": 3094
+    "votes": 0
   },
   {
     "id": 12,
@@ -165,7 +165,7 @@ export const characters = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXPMO6zWOMO4o0o_4Uu9jeU43jMERjtizZyw&s",
       "https://s.yimg.com/os/en/comingsoon_net_477/a6f000ed102fc4c2a324b18de87364c3"
     ],
-    "votes": 3860
+    "votes": 0
   },
   {
     "id": 13,
@@ -179,7 +179,7 @@ export const characters = [
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/4/4f/Panda_%28Anime_3%29.png/revision/latest?cb=20231124130718",
       "https://www.looper.com/img/gallery/pandas-powers-in-jujutsu-kaisen-explained/l-intro-1632871342.jpg"
     ],
-    "votes": 236
+    "votes": 0
   },
   {
     "id": 14,
@@ -193,7 +193,7 @@ export const characters = [
       "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/mahito-episode-42.jpg?w=1600&h=900&fit=crop",
       "https://preview.redd.it/mahito-has-to-me-the-most-over-scaled-character-in-the-show-v0-9pac1ivvqaqd1.jpeg?auto=webp&s=ddda3dcd61e3abfa074c62e6ac95ecd4739feb4f"
     ],
-    "votes": 439
+    "votes": 0
   },
   {
     "id": 15,
@@ -207,7 +207,7 @@ export const characters = [
       "https://static.wikia.nocookie.net/vsbattles/images/2/29/Jogo_%28Anime%29.png/",
       "https://i.ytimg.com/vi/NHjS-jnfa7s/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA5W_gdj0VzgVMAH7PFpWRVpKDHXQ"
     ],
-    "votes": 1324
+    "votes": 0
   },
   {
     "id": 16,
@@ -221,7 +221,7 @@ export const characters = [
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/7/76/Hanami_%28Anime%29.png/revision/latest?cb=20210318193331",
       "https://preview.redd.it/why-hanami-is-objectively-the-grippiest-character-in-jjk-v0-qborro8ih25c1.png"
     ],
-    "votes": 1658
+    "votes": 0
   },
   {
     "id": 17,
@@ -235,7 +235,7 @@ export const characters = [
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/29/Choso%27s_fury_%28Anime%29.png",
       "https://www.superherotoystore.com/cdn/shop/articles/1346588_1920x.png"
     ],
-    "votes": 2853
+    "votes": 0
   },
   {
     "id": 18,
@@ -249,7 +249,7 @@ export const characters = [
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/a/a0/Dagon_%28Anime%29.png/revision/latest/scale-to-width-down/250?cb=20231011142207",
       "https://static.wikia.nocookie.net/jujutsu-kaisen/images/c/c3/Dagon.png/revision/latest?cb=20200531181955"
     ],
-    "votes": 1510
+    "votes": 0
   },
   {
     "id": 19,
@@ -263,7 +263,7 @@ export const characters = [
       "https://i.pinimg.com/736x/19/36/3b/19363b13d161aef65f1473d0b4b00cdf.jpg",
       "https://www.superherodb.com/pictures2/portraits/10/050/43937.jpg?v=1649629586"
     ],
-    "votes": 1973
+    "votes": 0
   },
   {
     "id": 20,
@@ -277,7 +277,7 @@ export const characters = [
       "https://image.pngaaa.com/16/7833016-middle.png",
       "https://cdn.myanimelist.net/r/200x268/images/characters/9/460080.jpg?s=1b2e923eaa10d582245087c4a34bd473"
     ],
-    "votes": 3039
+    "votes": 0
   },
   {
     "id": 21,
@@ -291,7 +291,7 @@ export const characters = [
       "https://i.pinimg.com/564x/39/91/4f/39914ffb85b1b4d48e8993f95a5c09fc.jpg",
       "https://preview.redd.it/why-hanami-is-objectively-the-grippiest-character-in-jjk-v0-qborro8ih25c1.png?width=1920&format=png&auto=webp&s=d5475ca8f64bc78a55ac96d433ae1fec34ab72d3"
     ],
-    "votes": 1812
+    "votes": 0
   },
   {
     "id": 22,

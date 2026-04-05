@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CharacterCard.css';
 
-const CharacterCard = ({ character, onUpvote, isActiveVote }) => {
+const CharacterCard = ({ character, onUpvote, isActiveVote, hasVotedToday }) => {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
@@ -32,14 +32,15 @@ const CharacterCard = ({ character, onUpvote, isActiveVote }) => {
             </div>
             
             <button 
-              className={`upvote-button ${isActiveVote ? 'voted' : ''}`} 
-              onClick={(e) => onUpvote(character.id, e)}
+              className={`upvote-button ${isActiveVote ? 'voted' : ''} ${hasVotedToday && !isActiveVote ? 'disabled-vote' : ''}`} 
+              onClick={(e) => onUpvote(character.tag, e)}
               aria-label={`Upvote ${character.name}`}
+              disabled={hasVotedToday}
             >
               <svg className="upvote-icon" viewBox="0 0 24 24">
                 <path d="M12 19V5M5 12l7-7 7 7" />
               </svg>
-              {isActiveVote ? 'Leveled Up!' : 'Level Up'}
+              {isActiveVote ? 'Leveled Up!' : hasVotedToday ? 'Already Voted' : 'Level Up'}
             </button>
           </div>
         </div>

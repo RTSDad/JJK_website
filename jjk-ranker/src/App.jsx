@@ -4,31 +4,81 @@ import './App.css';
 import CharacterCard from './components/CharacterCard';
 import CharacterProfile from './pages/CharacterProfile';
 import { characters as initialCharacters } from './data/characters';
+import { supabase } from './supabaseClient';
 
 function App() {
-  const [characters, setCharacters] = useState([]);
-  const [votedCharacterId, setVotedCharacterId] = useState(null);
+  const [characters, setCharacters] = useState(initialCharacters);
+  const [hasVotedToday, setHasVotedToday] = useState(false);
+  const [votedCharacterTag, setVotedCharacterTag] = useState(null);
 
   useEffect(() => {
-    // Generate dynamic vote counts
-    const updatedChars = initialCharacters.map(char => ({
-      ...char,
-      votes: char.id === votedCharacterId ? char.votes + 1 : char.votes
-    }));
-    
-    // Auto-sort
-    const sorted = updatedChars.sort((a, b) => b.votes - a.votes);
-    setCharacters(sorted);
-  }, [votedCharacterId]);
-
-  const handleUpvote = (id, e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    
-    if (votedCharacterId === id) {
-      setVotedCharacterId(null); // Toggle off if clicked again
+    // Check local storage for today's vote
+    const today = new Date().toDateString();
+    const storedVote = localStorage.getItem('jjkVoteDate');
+    const storedTag = localStorage.getItem('jjkVotedTag');
+    if (storedVote === today) {
+      setHasVotedToday(true);
+      setVotedCharacterTag(storedTag);
     } else {
-      setVotedCharacterId(id); // Assign the single vote
+      setHasVotedToday(false);
+      setVotedCharacterTag(null);
+    }
+
+    // Fetch live votes globally from Supabase
+    const fetchVotes = async () => {
+      const { data, error } = await supabase.from('character_votes').select('*');
+      if (!error && data) {
+        const votesMap = {};
+        data.forEach(row => {
+          votesMap[row.tag] = row.votes;
+        });
+        
+        const mergedChars = initialCharacters.map(char => ({
+          ...char,
+          votes: votesMap[char.tag] || 0
+        }));
+        
+        setCharacters(mergedChars.sort((a, b) => b.votes - a.votes));
+      } else {
+        // Fallback to local hardcoded votes if DB error
+        setCharacters([...initialCharacters].sort((a, b) => b.votes - a.votes));
+      }
+    };
+
+    fetchVotes();
+  }, []);
+
+  const handleUpvote = async (tag, e) => {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    if (hasVotedToday) {
+      alert("You have already cast your single vote for today! Come back tomorrow.");
+      return;
+    }
+
+    // Optimistic UI update (feels instantaneous to the user)
+    setCharacters(prev => {
+      const updated = prev.map(c => 
+        c.tag === tag ? { ...c, votes: c.votes + 1 } : c
+      );
+      return updated.sort((a, b) => b.votes - a.votes);
+    });
+    
+    setHasVotedToday(true);
+    setVotedCharacterTag(tag);
+    
+    // Save locally to lock voting until tomorrow
+    const today = new Date().toDateString();
+    localStorage.setItem('jjkVoteDate', today);
+    localStorage.setItem('jjkVotedTag', tag);
+
+    // Update the database globally
+    const { error } = await supabase.rpc('increment_vote', { character_tag_val: tag });
+    if (error) {
+      console.error("Error updating vote globally: ", error);
     }
   };
 
@@ -40,8 +90,8 @@ function App() {
               <header className="app-header">
                 <h1 className="app-title">Jujutsu Kaisen</h1>
                 <p className="app-subtitle">
-                  Rank the strongest sorcerers and curses. You have exactly <strong>1 Level Up Vote</strong>. 
-                  Transfer it wisely. Click on a character to read their full profile.
+                  Rank the strongest sorcerers and curses. You receive exactly <strong>1 Level Up Vote per day</strong>. 
+                  {hasVotedToday ? " You have locked in your vote today." : " Choose wisely to impact the global standings."}
                 </p>
               </header>
 
@@ -51,13 +101,14 @@ function App() {
                     key={char.id} 
                     character={char} 
                     onUpvote={handleUpvote} 
-                    isActiveVote={votedCharacterId === char.id}
+                    isActiveVote={votedCharacterTag === char.tag}
+                    hasVotedToday={hasVotedToday}
                   />
                 ))}
               </main>
            </>
         } />
-        <Route path="/character/:id" element={<CharacterProfile characters={characters} votedCharacterId={votedCharacterId} onUpvote={handleUpvote} />} />
+        <Route path="/character/:id" element={<CharacterProfile characters={characters} votedCharacterTag={votedCharacterTag} hasVotedToday={hasVotedToday} onUpvote={handleUpvote} />} />
       </Routes>
     </div>
   );
